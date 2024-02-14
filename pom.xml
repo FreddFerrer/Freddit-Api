@@ -22,6 +22,7 @@
 		<module>post-api</module>
 		<module>email-api</module>
 		<module>eureka-server</module>
+		<module>api-gateway</module>
 	</modules>
 
 	<properties>
