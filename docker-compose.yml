@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  ### MySQL database for Products
+  db-products:
+    container_name: db-users
+    image: mysql:8.0.33
+    environment:
+      MYSQL_DATABASE: ms_users
+      MYSQL_USER: freddy
+      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3307:3306
