@@ -4,7 +4,7 @@ import com.fredd.users_api.domain.model.User;
 
 import java.util.List;
 
-public interface UserPersistantePort {
+public interface UserPersistancePort {
 
     User create(User user);
     User getById(Long id);
