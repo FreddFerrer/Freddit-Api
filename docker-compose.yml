@@ -1,7 +1,7 @@
 version: '3'
 services:
 
-  ### MySQL database for Products
+  ### MySQL database for users
   db-products:
     container_name: db-users
     image: mysql:8.0.33
