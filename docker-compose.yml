@@ -2,13 +2,25 @@ version: '3'
 services:
 
   ### MySQL database for users
-  db-products:
+  db-users:
     container_name: db-users
     image: mysql:8.0.33
     environment:
-      MYSQL_DATABASE: ms_users
+      MYSQL_DATABASE: db_users
       MYSQL_USER: freddy
       MYSQL_PASSWORD: 1234
       MYSQL_ROOT_PASSWORD: root
     ports:
       - 3307:3306
+
+  ### MySQL database for posts
+  db-post:
+    container_name: db-post
+    image: mysql:8.0.33
+    environment:
+      MYSQL_DATABASE: db_post
+      MYSQL_USER: freddy
+      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3308:3306
